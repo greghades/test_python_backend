@@ -1,0 +1,26 @@
+{% extends '../base.html' %}
+
+
+{% block content %}
+    
+    <div class="row">
+        {% for juri in jurisprudencias %}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <p>Rol:{{juri.rol}}</p>
+                            <h5 class="card-title">Caratulado:{{juri.caratulado}}</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Tribunal:{{juri.tribunal}}</h6>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Fecha de sentencia:{{juri.fecha_sentencia}}</h6>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Tipo de causa:{{juri.tipo_causa}}</h6>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Competencia:{{juri.competencia}}</h6>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Materia:{{juri.materia}}</h6>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Ministro redactor:{{juri.ministro_redactor}}</h6>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+    </div>
+        
+{% endblock content %}
+    

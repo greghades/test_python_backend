@@ -1,0 +1,13 @@
+{% extends '../base.html' %}
+
+
+{% block content %}
+
+    <h3>Prueba #1 Jurisprudencias</h3>
+    <form action="{% url 'agregar-datos' %} " class="d-flex flex-column gap-3 align-items-center" method="POST">
+        {% csrf_token %}
+        <input type="text" name="search" class="p-2" style="width: 50%;" placeholder="Buscar jurisprudencias">
+        <button type="submit" style="width: 10%;">Buscar</button>
+    </form>
+{% endblock content %}
+    
