@@ -1,0 +1,43 @@
+{% extends '../base.html' %}
+
+
+{% block content %}
+    <h2>Concesiones</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">N° Concesion</th>
+                    <th scope="col">Tipo Concesion</th>
+                    <th scope="col">Comuna</th>
+                    <th scope="col">Lugar</th>
+                    <th scope="col">N° RS/DS</th>
+                    <th scope="col">Tipo Tramite</th>
+                    <th scope="col">Concesionario</th>
+                    <th scope="col">Tipo Vigencia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  {% for d in data %}
+                    <tr>
+                        <th scope="row">{{d.numero}}</th>
+                        <td>{{d.numero_concesion}}</td>
+                        <td>{{d.tipo_concesion}}</td>
+                        <td>{{d.comuna}}</td>
+                        <td>{{d.lugar}}</td>
+                        <td>{{d.rs_ds}}</td>
+                        <td>{{d.tipo_tramite}}</td>
+                        <td>{{d.concesionario}}</td>
+                        <td>{{d.tipo_vigencia}}</td>
+                    </tr>
+                  {% endfor %}
+                    
+                </tbody>
+              </table>
+        </div>
+    </div>
+{% endblock content %}
+    
