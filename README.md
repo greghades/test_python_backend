@@ -50,13 +50,33 @@ Activa el entorno virtual:
 
 ```bash
   En Windows: env\Scripts\activate
-  En macOS y Linux: source env/bin/activate
+  En macOS y Linux: source env/Scripts/activate
 ```
 Instala las dependencias: 
 
 ```bash
   pip install -r req.txt
 ```
+Acceder a la carpeta Core: 
+```bash
+  cd core
+```
+Crear archivo .env en el mismo directorio del archivo **settings.py** osea la otra carpeta llamada **core** y colocar lo siguiente
+
+```bash
+  SECRET_KEY='Tu_llave'
+  
+  POSTGRESQL_NAME='nombre_base_de_datos'
+  POSTGRESQL_USER='usuario'
+  POSTGRESQL_PASS='contraseña'
+  POSTGRESQL_HOST=localhost
+  POSTGRESQL_PORT=5432
+  DEBUG=True
+```
+Crear Base de datos Postgres
+
+Tutorial: https://cosasdedevs.com/posts/como-conectar-una-base-de-datos-postgresql-con-django/
+
 Ejecuta las migraciones: 
 ```bash
   python manage.py migrate
