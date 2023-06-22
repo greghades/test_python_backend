@@ -34,7 +34,7 @@ def cargar_datos(request):
     return redirect('listar-datos')
 
 def listar_datos(request):
-    queryset = Concesiones.objects.all()
+    queryset = Concesiones.objects.all().order_by('numero')
 
     context = {
         'data':queryset
