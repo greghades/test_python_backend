@@ -32,7 +32,6 @@ def Obtener_datos(request):
 
     # Espera a que se carguen los resultados de la solicitud POST
     results = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".contenido")))
-    
     # Procesa y muestra los resultados obtenidos
 
     for result in results:
