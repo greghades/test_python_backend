@@ -20,14 +20,3 @@ class Jurisprudencias(models.Model):
     def __str__(self):
         return self.caratulado
 
-class Descriptores(models.Model):
-    name = models.CharField(max_length=50)
-    Jurisprudencias = models.ManyToManyField(Jurisprudencias)
-
-    class Meta:
-        verbose_name = "Descriptor"
-        verbose_name_plural = "Descriptores"
-
-    def __str__(self):
-        return self.name
-    

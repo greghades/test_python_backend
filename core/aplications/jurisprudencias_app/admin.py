@@ -7,4 +7,3 @@ class JurisprudenciasAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Jurisprudencias,JurisprudenciasAdmin)
-admin.site.register(Descriptores)
