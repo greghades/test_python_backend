@@ -94,7 +94,8 @@ Accede a la aplicación en tu navegador web: http://127.0.0.1:8000/home/
 Imagen de pantalla:
 https://prnt.sc/iAHNZF6FTov9
 
-**El primer boton** dará a ejecutar el desafio 1
+## El primer boton 
+Dará a ejecutar el desafio 1
 Una vez en la vista dada por http://127.0.0.1:8000/jurisprudencia/busqueda/
 
 Puede introducir un texto de busqueda de Jurisprudencias
@@ -112,7 +113,8 @@ Imagen de pantalla: https://prnt.sc/06tVFPlIOwf8
 Tambien pueden ver los resultados desde el admin de django en la ruta: 
 http://127.0.0.1:8000/admin/jurisprudencias_app/jurisprudencias/
 
-**El segundo boton** realizará una busqueda al url proporcionada con la ruta 
+## El segundo boton 
+Realizará una busqueda al url proporcionada con la ruta 
 http://127.0.0.1:8000/conseciones/datos-concesiones/
 
 Esta realizara un extracción de los datos de todas las paginas generando un archivo llamado datos.json que a su vez es cargado en un modelo.
